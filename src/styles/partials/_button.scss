@@ -1,0 +1,45 @@
+.btn {
+  display: inline-block;
+	position: relative;
+	font-family: 'Roboto Mono', 'Open Sans';
+  cursor: pointer;
+  padding: 0 10px;
+	line-height: 26px;
+	font-size: 16px;
+  color: #fff;
+  text-align: center;
+	border-radius: 2px;
+	
+	border: 2px solid $color1;
+	background: $color1;	
+	
+	&:hover {
+		color: $color1;
+		background: $color2;
+	}
+	&.block {
+    display: block;
+    width: 100%;
+	}
+
+	&.btn-link {
+		color: $color1;
+		border-color: transparent;
+		background: transparent;
+
+		&:hover {
+			color: darken($color1, 10%);
+			background: transparent;
+		}
+	}
+
+	&.btn-default {
+		border: 2px solid $color4;
+		background: $color4;	
+		
+		&:hover {
+			color: $color4;
+			background: $color5;
+		}
+	}
+}

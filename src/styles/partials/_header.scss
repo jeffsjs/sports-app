@@ -1,0 +1,66 @@
+
+
+.header {
+	.container-header {
+		margin-bottom: 20px;
+	}
+	padding: 20px 0;
+
+	.logo {
+		vertical-align: middle;
+		font-size: 18px;
+		font-weight: 600;
+
+		.icon {
+			color: #fff;
+			background: $color1;
+			display: inline-block;
+			padding: 4px;
+			border-radius: 5px;
+			vertical-align: middle;
+		}
+	}
+
+	.icon-perfil {
+		border: 1px solid $color3;
+		border-radius: 50%;
+		padding: 4px;
+		font-style: normal;
+		text-transform: none;
+		text-align: center;
+		margin: 0 10px;
+	}
+}
+
+.breadcrumb {
+  color: $color4;
+  background: $color6;
+
+  .icon {
+    color: $color1;
+  }
+
+  a {
+    color: $color1;
+    text-decoration: none;
+
+    &.hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 26px;
+
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+
+    li {
+      float: left;
+      margin: 0 10px 0 0;
+    }
+  }
+}

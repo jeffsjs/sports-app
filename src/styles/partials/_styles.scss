@@ -1,0 +1,58 @@
+.sport {
+	padding-top: 40px;
+	padding-bottom: 40px;
+  background: $color2;
+  
+	.container-sport {
+		max-width: 900px;
+		@include viewTablet {
+			max-width: 100%;
+		}
+	}
+
+	.icon {
+		display: inline-block;
+		svg {
+			width: 60px;
+			color: $color1;
+		}
+  }
+  p {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    span {
+      display: block;
+      font-weight: 400;
+    }
+  }
+}
+
+.card {
+	h3 { 
+		color: $color1;
+		font-size: 24px;
+		font-weight: 400;
+	}
+
+	.icon {
+		svg {
+			width: 44px;
+			margin-right: 15px;
+			color: $color1;
+		}
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+.form {
+	margin: 50px auto;
+	max-width: 80%;
+	padding: 50px 0;
+	border-top: 1px solid $color4;
+
+	
+}

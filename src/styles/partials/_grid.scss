@@ -1,0 +1,131 @@
+$columns: (
+	m: '576px',
+	t: '768px',
+	d: '769px'
+);
+$order: 1 2 3;
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	margin: 0 -20px;
+	flex-wrap: wrap;
+}
+
+.flex {
+	display: flex;
+}
+
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
+.column {
+	flex-direction: column;
+}
+.column-reverse {
+	flex-direction: column-reverse;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-item-1 {
+	flex: 1;
+}
+
+.flex-start {
+	justify-content: flex-start;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.center {
+	justify-content: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.space-around {
+	justify-content: space-around;
+}
+
+[class*='col'] {
+	padding: 0 20px;
+	flex-grow: 1;
+}
+
+.col {
+	flex-basis: 0;
+	max-width: 100%;
+}
+
+.col-1 {
+	flex: 0 0 percentage(1/3);
+	max-width: percentage(1/3);
+}
+.col-2 {
+	flex: 0 0 percentage(2/3);
+	max-width: percentage(2/3);
+}
+.col-3 {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+
+
+@each $key, $view in $columns {
+	$i: index($columns, $view);
+	$property: max-width;
+	@if $key == 'd' {
+		$property: min-width;
+	}
+
+	@media ($property: $view) {
+		.col-#{$key}-1 {
+			flex: 0 0 percentage(1/3);
+			max-width: percentage(1/3);
+		}
+
+		.col-#{$key}-2 {
+			flex: 0 0 percentage(2/3);
+			max-width: percentage(2/3);
+		}
+		.col-#{$key}-3 {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		.order-#{$i} {
+			order: $i;
+		}
+
+		@each $pos in $order {
+			$in: index($order, $pos);
+			.order-#{$key}-#{$in} {
+				order: $in;
+			}
+		}
+	}
+}

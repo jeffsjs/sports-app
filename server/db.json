@@ -1,0 +1,112 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "ride": "Always",
+      "days": [
+        "Every day"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "ride": "Sometimes",
+      "days": [
+        "Week days"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "ride": "Never",
+      "days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "ride": "Sometimes",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "username": "Kamren",
+      "ride": "Sometimes",
+      "days": [
+        "Weekends"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Mrs. Dennis Schulist",
+      "username": "Leopoldo_Corkery",
+      "ride": "Always",
+      "days": [
+        "Fri",
+        "Sun"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Kurtis Weissnat",
+      "username": "Elwyn.Skiles",
+      "ride": "Always",
+      "days": [
+        "Every day"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Nicholas Runolfsdottir V",
+      "username": "Maxime_Nienow",
+      "ride": "Always",
+      "days": [
+        "Every day"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Glenna Reichert",
+      "username": "Delphine",
+      "ride": "Always",
+      "days": [
+        "Every day"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Clementina DuBuque",
+      "username": "Moriah.Stanton",
+      "ride": "Always",
+      "days": [
+        "Every day"
+      ]
+    },
+    {
+      "new": true,
+      "username": "Jeff",
+      "name": "Jeff XX",
+      "email": "jeff@jeff.com",
+      "city": "",
+      "ride": "Sometimes",
+      "days": [
+        "Tue",
+        "Thu"
+      ],
+      "id": 11
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+.table {
+	width: 100%;
+
+	th {
+		font-size: 18px;
+		padding: 16px;
+		vertical-align: bottom;
+		border-bottom: 2px solid $color3;
+	}
+	tbody {
+		tr:nth-of-type(odd) {
+			background-color: rgba(0, 0, 0, 0.05);
+		}
+
+		tr {
+			&:hover {
+				background: $color5;
+				.btn-delete {
+					visibility: visible;
+				}
+			}
+		}
+
+		td {
+			padding: 16px;
+		}
+	}
+
+	.btn-link {
+		text-transform: none;
+	} 	
+
+	.btn-delete {
+		visibility: hidden;
+		font-size: 14px;
+		svg {
+			width: 15px;
+			vertical-align: middle;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans|Open+Sans:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+$color1: #1abc9c;
+$color2: #baebe1;
+$color3: #333333;
+$color4: #999999;
+$color5: #cccccc;
+$color6: #f8f8f8;
+
+@import './partials/midia';
+@import './partials/grid';
+@import './partials/default';
+@import './partials/button';
+@import './partials/header';
+@import './partials/table';
+@import './partials/form';
+@import './partials/styles';
+
